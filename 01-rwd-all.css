@@ -1,0 +1,384 @@
+
+nav{
+    width: 367px;
+    height: 100vh;
+    background-color: gray;
+    float: left;
+    padding-top: 75px;
+}
+main{
+    width: calc(100% - 367px);
+    height: 100vh;
+    float: right;
+    position: relative;
+    background-color: burlywood;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    margin: auto;
+    margin-bottom: 60px;
+
+}
+.links{
+    margin: auto;
+    width: 150px;
+
+}
+a{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: aliceblue; 
+}
+.container{
+    width: 955px ;
+    height: 570px;
+    position: absolute;
+    top: calc(50% - 285px);
+    left:  calc(50% - calc(955px / 2));;
+
+}
+.container > div{
+    width: 315px;
+    height: 570px;
+    float: left;  
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.x{
+    background-image: url('./img/dog.jpeg');
+    background-position: center;
+    transition: 1s;
+}
+.x:hover{
+    transform: rotate(360deg)scale(0.8);
+    background-size: 100%;
+
+}
+.y{
+    background-image: url('./img/123.jpg');
+    background-position: center;
+    margin: 0px 5px;
+}
+.y:hover{
+    background-image: url('./img/松鼠2.jpg')
+}
+
+
+.z{
+    background-image: url('./img/下載.jpg');
+    background-position: center;
+    transition: 1s;
+}
+.z:hover{
+    background-image: url('./img/cat.png');
+    transform: rotate(-360deg)scale(0.8);
+    background-size: 100%;
+}
+
+span{
+    display: none;
+}
+@media(max-width:1400px){
+
+    nav{
+        width: 367px;
+        height: 100vh;
+        background-color: gray;
+        float: left;
+        padding-top: 75px;
+    }
+    main{
+        width: calc(100% - 367px);
+        height: 100vh;
+        float: right;
+        position: relative;
+        background-color: burlywood;
+    }
+    .logo{
+        width: 150px;
+        height: 150px;
+        background-color: brown;
+        margin: auto;
+        margin-bottom: 60px;
+    
+            
+    }
+    .links{
+        margin: auto;
+        width: 150px;
+    
+    }
+    a{
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 50px;
+        color: aliceblue; 
+    }
+    .container{
+        width: 800px ;
+        height: 570px;
+        position: absolute;
+        top: 50%;
+        left:  50%;
+        transform: translate(-50%,-50%);
+    
+    }
+    .container .x{
+        width: 800px;
+        height: 280px;
+        margin-bottom: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('./img/dog.jpeg');
+        background-position: center;
+        transition: 1s;
+    }
+    .x:hover{
+        transform: rotate(360deg)scale(0.8);
+        background-size: 100%;
+    
+    }
+    .container .y{
+        width: 395px; 
+        height:280px ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        float: left;
+        background-image: url('./img/123.jpg');
+        background-position: center;
+        margin: unset;
+    }
+    .y:hover{
+        background-image: url('./img/松鼠2.jpg')
+    }
+    
+    
+    .container .z{
+        width: 395px;
+        height: 280px;
+    
+        float: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('./img/下載.jpg');
+        background-position: center;
+        transition: 1s;
+    }
+    .z:hover{
+        background-image: url('./img/cat.png');
+        transform: rotate(-360deg)scale(0.8);
+        background-size: 100%;
+    }
+    span{
+        display: none;
+        }
+
+}
+@media(max-width:1200px){
+
+    nav{
+        width: 100%;
+        height: 100px;
+        background-color: gray;
+        padding: 10px 35px;
+        float: unset;
+    }
+    main{
+        width:100%;
+        padding: 50px 35px 75px;
+        float: unset;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+        background-color: brown;
+        float: left;
+        margin: 0px;
+
+    }
+    .links{
+        width: unset;
+        height:100%;
+        margin: 0px;
+        float: right;
+        line-height: 80px;
+    }
+    a{
+        color: aliceblue; 
+        display: unset;
+        text-align: center;
+        margin-left: 30px;
+    
+    }
+    .container{
+        width:100%;    
+        height: 800px;
+        position: unset;
+        transform: unset;
+    }
+    .container .x{
+        width: 100%;
+        /* height: 280px; */
+        height: calc(calc(100% - 10px) / 2);
+        margin-bottom: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('./img/dog.jpeg');
+        background-position: center;
+        transition: 1s;
+    }
+    .x:hover{
+        transform: rotate(360deg)scale(0.8);
+        background-size: 100%;
+    
+    }
+    .container .y{
+        width: calc(50% - 5px); 
+        height: calc(50% - 5px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        float: left;
+        background-image: url('./img/123.jpg');
+        background-position: center;
+    }
+    .y:hover{
+        background-image: url('./img/松鼠2.jpg')
+    }
+    
+    
+    .container .z{
+        width:calc(50% - 5px);
+        height: calc(50% - 5px);
+    
+        float: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('./img/下載.jpg');
+        background-position: center;
+        transition: 1s;
+    }
+    .z:hover:hover{
+        background-image: url('./img/cat.png');
+        transform: rotate(-360deg)scale(0.8);
+        background-size: 100%;
+    } 
+    span{
+        display: none;
+        }
+}
+    
+@media(max-width:800px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    nav{
+        width: 100%;
+        height: 80px;
+        background-color: gray;
+        padding: 15px 18px;
+        position: relative;
+    }
+    main{
+        width:100%;
+        min-height: calc(100vh - 80px);
+        background-color: burlywood;
+        padding: 0px;
+    }
+    .logo{
+        width: 56px;
+        height: 56px;
+        background-color: brown;
+        float: right;
+        position: absolute;
+        left: calc(50% - 28px);
+        top: calc(50% - 28px);
+    
+    }
+    .links{
+        width: 40px;
+        height: 50px;
+        background-color: black;
+        text-align: center;
+        color: aliceblue;
+        font-size: 35px;
+        float: left;
+        display: inline;
+    }
+    .links:hover{
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        opacity: 0.5;
+        padding: 10px;
+        
+    } 
+    .links:hover>span{
+        display: none;
+    }
+    
+    a{
+        color: aliceblue; 
+        display: none;
+      
+    }
+    .links:hover a{
+        display: inline;
+    }
+    .container{
+        width: 100% ;
+        position: unset;
+    
+    }
+    .container .x{
+        width: 100%;
+        height: 195px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('./img/dog.jpeg');
+        background-position: center;
+        transition: 1s;
+        margin: 0px;
+    }
+    .x:hover{
+        transform: rotate(360deg)scale(0.8);
+        background-size: 100%;
+    
+    }
+    .container .y{
+        width: 100%;
+        height: 195px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('./img/123.jpg');
+        background-position: center;
+    }
+    .y:hover{
+        background-image: url('./img/松鼠2.jpg')
+    }
+    
+    
+    .container .z{
+        width: 100%;
+        height: 195px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('./img/下載.jpg');
+        background-position: center;
+        transition: 1s;
+    }
+    .z:hover{
+        background-image: url('./img/cat.png');
+        transform: rotate(-360deg)scale(0.8);
+        background-size: 100%;
+    } 
+    
+}
